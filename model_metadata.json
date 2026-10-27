@@ -1,0 +1,107 @@
+{
+  "best_model": "Random Forest",
+  "classes": [
+    "Low Risk",
+    "Moderate Risk",
+    "High Risk"
+  ],
+  "input_features": [
+    "age",
+    "department",
+    "job_role",
+    "monthly_income",
+    "total_working_years",
+    "years_at_company",
+    "years_since_last_promotion",
+    "overtime",
+    "distance_from_home_km",
+    "job_satisfaction",
+    "work_life_balance"
+  ],
+  "model_comparison": {
+    "Random Forest": {
+      "cv_accuracy_mean": 0.8113,
+      "cv_accuracy_std": 0.0151,
+      "cv_f1_macro_mean": 0.7904,
+      "test_accuracy": 0.82,
+      "test_precision_macro": 0.8287,
+      "test_recall_macro": 0.7756,
+      "test_f1_macro": 0.7937,
+      "test_f1_weighted": 0.8188,
+      "test_roc_auc_macro": 0.9427,
+      "confusion_matrix": [
+        [
+          240,
+          32,
+          0
+        ],
+        [
+          27,
+          192,
+          10
+        ],
+        [
+          0,
+          39,
+          60
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "cv_accuracy_mean": 0.7746,
+      "cv_accuracy_std": 0.0238,
+      "cv_f1_macro_mean": 0.756,
+      "test_accuracy": 0.7983,
+      "test_precision_macro": 0.7978,
+      "test_recall_macro": 0.7659,
+      "test_f1_macro": 0.7783,
+      "test_f1_weighted": 0.7986,
+      "test_roc_auc_macro": 0.9109,
+      "confusion_matrix": [
+        [
+          233,
+          39,
+          0
+        ],
+        [
+          31,
+          182,
+          16
+        ],
+        [
+          0,
+          35,
+          64
+        ]
+      ]
+    },
+    "K-Nearest Neighbors (KNN)": {
+      "cv_accuracy_mean": 0.7363,
+      "cv_accuracy_std": 0.0192,
+      "cv_f1_macro_mean": 0.7052,
+      "test_accuracy": 0.7583,
+      "test_precision_macro": 0.7471,
+      "test_recall_macro": 0.705,
+      "test_f1_macro": 0.7195,
+      "test_f1_weighted": 0.7545,
+      "test_roc_auc_macro": 0.8918,
+      "confusion_matrix": [
+        [
+          238,
+          34,
+          0
+        ],
+        [
+          44,
+          166,
+          19
+        ],
+        [
+          2,
+          46,
+          51
+        ]
+      ]
+    }
+  }
+}
